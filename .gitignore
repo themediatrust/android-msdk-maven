@@ -1,7 +1,82 @@
-# macOS
-.DS_Store
+# ============================================================================
+# .gitignore for github.com/themediatrust/maven
+#
+# This repo is a static Maven repository served via GitHub Pages. It hosts
+# binary artifacts (AAR + POM + Gradle Module Metadata + checksums) for
+# com.themediatrust:media-filter-sdk. It MUST NOT contain SDK source code,
+# ProGuard mapping / rule files, debug artifacts, or any secrets. The SDK
+# source code stays on Bitbucket (themediatrust/android_msdk).
+#
+# Patterns below deny those families by default. The AAR / POM / module /
+# checksum / maven-metadata.xml artifact types are NOT listed because they
+# are the entire reason this repo exists; they remain trackable.
+# ============================================================================
 
-# Editor / scratch
+# --- Local development hygiene ---------------------------------------------
+.DS_Store
 .idea/
 *.swp
 *~
+
+# --- SDK source code: must never land here ---------------------------------
+# SDK source lives on Bitbucket (themediatrust/android_msdk), not on github.
+*.kt
+*.kts
+*.java
+*.aidl
+*.c
+*.cc
+*.cpp
+*.h
+*.hpp
+**/src/
+**/Sources/
+**/main/
+
+# --- Build configuration: never. ------------------------------------------
+*.gradle
+*.gradle.kts
+gradle.properties
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
+settings.gradle.kts
+build.gradle
+build.gradle.kts
+local.properties
+
+# --- ProGuard / R8: highest-risk leak category -----------------------------
+# mapping.txt de-obfuscates the AAR. Never publish.
+# Rule files describe attack-surface keep rules. Never publish.
+**/mapping.txt
+**/seeds.txt
+**/usage.txt
+**/configuration.txt
+**/proguard-rules.pro
+**/consumer-rules.pro
+proguard/
+**/proguard/
+
+# --- Build outputs / intermediate dirs (only published AARs belong here) ---
+build/
+.gradle/
+**/build/
+**/.gradle/
+
+# --- Sources / javadoc jars: not produced for this closed SDK -------------
+*-sources.jar
+*-javadoc.jar
+
+# --- Symbol / debug files --------------------------------------------------
+*.symbols
+*.pdb
+*.so.debug
+**/symbols/
+
+# --- Secrets ---------------------------------------------------------------
+.env
+.env.*
+*.keystore
+*.jks
+gradle.properties.signing
