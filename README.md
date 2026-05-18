@@ -1,11 +1,11 @@
 # TMT Maven Repository
 
-[![Maven](https://img.shields.io/badge/Maven-repository-blue.svg)](https://themediatrust.github.io/maven/)
+[![Maven](https://img.shields.io/badge/Maven-repository-blue.svg)](https://themediatrust.github.io/android-msdk-maven/)
 [![Platform](https://img.shields.io/badge/platform-Android%2021%2B-lightgrey.svg)](https://developer.android.com/)
 
 Static Maven repository served via GitHub Pages, hosting binary artifacts for The Media Trust mobile SDKs.
 
-**Base URL:** `https://themediatrust.github.io/maven/`
+**Base URL:** `https://themediatrust.github.io/android-msdk-maven/`
 
 ## Available Artifacts
 
@@ -23,7 +23,7 @@ Latest version: see the [maven-metadata.xml](com/themediatrust/media-filter-sdk/
 repositories {
     google()
     mavenCentral()
-    maven { url = uri("https://themediatrust.github.io/maven/") }
+    maven { url = uri("https://themediatrust.github.io/android-msdk-maven/") }
 }
 
 dependencies {
@@ -37,7 +37,7 @@ dependencies {
 repositories {
     google()
     mavenCentral()
-    maven { url 'https://themediatrust.github.io/maven/' }
+    maven { url 'https://themediatrust.github.io/android-msdk-maven/' }
 }
 
 dependencies {
