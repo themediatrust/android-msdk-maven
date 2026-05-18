@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.themediatrust",
+    "module": "media-filter-sdk",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media-filter-sdk-1.0.1.aar",
+          "url": "media-filter-sdk-1.0.1.aar",
+          "size": 195800,
+          "sha512": "a1796159904160fbadca03b390fb95676146532521e088f02d7dcfaa15443092a9d4912ff5b8bcba15d7969cf312e286a7aaf3d6742861c214c24bce2973fb7f",
+          "sha256": "2c0aca90fcc812faf2ff9bf073670eedb80e57442177c42ddaa32c3a313e4e69",
+          "sha1": "2f2d651b8cb46e431662b04981b1f43eb4f832b1",
+          "md5": "10c2a87b4e9d71cdef31e209e900dfab"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.6.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media-filter-sdk-1.0.1.aar",
+          "url": "media-filter-sdk-1.0.1.aar",
+          "size": 195800,
+          "sha512": "a1796159904160fbadca03b390fb95676146532521e088f02d7dcfaa15443092a9d4912ff5b8bcba15d7969cf312e286a7aaf3d6742861c214c24bce2973fb7f",
+          "sha256": "2c0aca90fcc812faf2ff9bf073670eedb80e57442177c42ddaa32c3a313e4e69",
+          "sha1": "2f2d651b8cb46e431662b04981b1f43eb4f832b1",
+          "md5": "10c2a87b4e9d71cdef31e209e900dfab"
+        }
+      ]
+    }
+  ]
+}

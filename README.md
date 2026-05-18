@@ -27,7 +27,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.themediatrust:media-filter-sdk:1.2.3")
+    implementation("com.themediatrust:media-filter-sdk:1.3.0")
 }
 ```
 
@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.themediatrust:media-filter-sdk:1.2.3'
+    implementation 'com.themediatrust:media-filter-sdk:1.3.0'
 }
 ```
 

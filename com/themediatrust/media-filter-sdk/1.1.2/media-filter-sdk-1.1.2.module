@@ -1,0 +1,81 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.themediatrust",
+    "module": "media-filter-sdk",
+    "version": "1.1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media-filter-sdk-1.1.2.aar",
+          "url": "media-filter-sdk-1.1.2.aar",
+          "size": 188799,
+          "sha512": "1e3a7efda61ab75194a4ee5cf96043f5d520f2ea58d3ce093d1d2e57eda8e75c05f7c3e6fefe405d002f96026c3a1addeb6e6cbd36abf4d3e8ecbf32fe8d311a",
+          "sha256": "0ce49d9e43c728609fab10de9495b3d622beb811478863d1e15084f8e787b854",
+          "sha1": "b8b646aa2620acedada1d5dee7538bbbac666d87",
+          "md5": "1364d50327ff5a982e94e7ccef2f5512"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media-filter-sdk-1.1.2.aar",
+          "url": "media-filter-sdk-1.1.2.aar",
+          "size": 188799,
+          "sha512": "1e3a7efda61ab75194a4ee5cf96043f5d520f2ea58d3ce093d1d2e57eda8e75c05f7c3e6fefe405d002f96026c3a1addeb6e6cbd36abf4d3e8ecbf32fe8d311a",
+          "sha256": "0ce49d9e43c728609fab10de9495b3d622beb811478863d1e15084f8e787b854",
+          "sha1": "b8b646aa2620acedada1d5dee7538bbbac666d87",
+          "md5": "1364d50327ff5a982e94e7ccef2f5512"
+        }
+      ]
+    }
+  ]
+}
