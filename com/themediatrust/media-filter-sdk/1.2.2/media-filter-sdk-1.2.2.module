@@ -1,0 +1,106 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.themediatrust",
+    "module": "media-filter-sdk",
+    "version": "1.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media-filter-sdk-1.2.2.aar",
+          "url": "media-filter-sdk-1.2.2.aar",
+          "size": 182920,
+          "sha512": "5aef75ad3f93be90a525e60690717a52c3a87cb39b58e055d9777fa15c8c0b57dd7f3ab8532c8b9935264610b9a2a2c74783586c626b7dd41a12acec7004a773",
+          "sha256": "13d6561ce853f8c523befc9d24e7240680dd26e12faa2049da1dc7b6d8ade35a",
+          "sha1": "8401097b8199357388c37693bd3546fdb48f6920",
+          "md5": "53e50559cfa573e04dd92b0bede1af73"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media-filter-sdk-1.2.2.aar",
+          "url": "media-filter-sdk-1.2.2.aar",
+          "size": 182920,
+          "sha512": "5aef75ad3f93be90a525e60690717a52c3a87cb39b58e055d9777fa15c8c0b57dd7f3ab8532c8b9935264610b9a2a2c74783586c626b7dd41a12acec7004a773",
+          "sha256": "13d6561ce853f8c523befc9d24e7240680dd26e12faa2049da1dc7b6d8ade35a",
+          "sha1": "8401097b8199357388c37693bd3546fdb48f6920",
+          "md5": "53e50559cfa573e04dd92b0bede1af73"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "media-filter-sdk-1.2.2-sources.jar",
+          "url": "media-filter-sdk-1.2.2-sources.jar",
+          "size": 228008,
+          "sha512": "62dccfe3a5c07e04f8cdcc75814495941cd68e23ff185681d1e49cf29115368c50e4144e58ea52cb33ab7d53b668da227fb30b9d3bf3481d256c6f30a29f75ca",
+          "sha256": "00c53d42102d8f745daced636ada1d38900c411fc1ec2d45329acf95252b7559",
+          "sha1": "c59737288cd3f02fc6148d3bafef5c7babf743c2",
+          "md5": "969fc1a6e60c633e467db9050ac7aa17"
+        }
+      ]
+    }
+  ]
+}
