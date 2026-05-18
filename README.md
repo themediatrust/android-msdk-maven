@@ -72,4 +72,4 @@ For integration support, contact [support@themediatrust.com](mailto:support@them
 
 Proprietary. See [LICENSE](LICENSE) for terms.
 
-Copyright (c) 2026 The Media Trust LLC. All rights reserved.
+Copyright (c) 2026 TMT Digital, Inc. All rights reserved.
